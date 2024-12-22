@@ -4,7 +4,7 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 const tripRoutes = require('./routes/trips');
 const bookingRoutes = require('./routes/booking');
-
+const cors=require("cors")
 dotenv.config();
 
 
