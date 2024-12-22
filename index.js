@@ -17,6 +17,9 @@ app.use('/api/trips', tripRoutes);
 app.use('/api/bookings', bookingRoutes);
 
 const PORT = process.env.PORT || 5000;
+app.get("/",(req,res)=>{
+    res.send("Welcome to Travel Guide")
+})
 app.listen(PORT, async() => {
     try{
         await connectDB
